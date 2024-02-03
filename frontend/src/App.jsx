@@ -1,12 +1,10 @@
-import { useState } from 'react'
-
-
+import React from "react"
+import RegisterPage from "./components/RegisterPage"
 function App() {
   
-
   return (
     <>
-      
+      <RegisterPage></RegisterPage>
     </>
   )
 }
