@@ -13,6 +13,10 @@
     /* background-image: linear-gradient(to right top, #d3d62b, #dacd21, #e0c419, #e6bb14, #ebb212); */
     background-color: #232248;
 }
+form{
+    height: 100%;
+    width: 100%;
+}
 .box{
     height: 60vh;
     width: 50vw;    
@@ -22,8 +26,6 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-
-
 }
 .inputRows{
     width: 100%;
@@ -41,6 +43,10 @@
 input{
     height: 37px;
     padding: 0 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.254);
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    
 }
 .genderBox{
     width: 100%;
@@ -64,6 +70,7 @@ p{
     background-color: #45437a;
     border: none;
     color: white;
+    border-radius: 5px;
 }
 @media only screen and (max-width: 678px) {
     h1{
@@ -84,4 +91,9 @@ p{
     h1{
         font-size: 25px;
     }
+}
+.error{
+    padding-left: 0;
+    color: red;
+    size: 10px;
 }
