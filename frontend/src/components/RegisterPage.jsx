@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+// import { useState } from 'react';
 import { useRef } from 'react'
 import styles from "../stylesheets/RegisterPage.module.css"
 
@@ -11,13 +11,13 @@ export default function RegisterPage() {
   const password=useRef(null);
   const confPassword=useRef(null);
   const gender=useRef(null);  
-  const [emailError,setEmailError]= useState("");
-  const validate= () =>{
-    if(!email.current.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
-        setEmailError("invalid email");
-      return false
-    }
-  }
+  // const [emailError,setEmailError]= useState("");
+  // const validate= () =>{
+  //   if(!email.current.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+  //       setEmailError("invalid email");
+  //     return false
+  //   }
+  // }
   const formHandler =(event) =>{
       event.preventDefault();
       const formData ={
