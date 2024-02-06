@@ -39,7 +39,7 @@ export default function RegisterPage() {
             <div className={styles.inputRows}>
               <div className={styles.headingInput}>
               <label htmlFor="">Full Name</label>
-              <input type="text" id='fullname' placeholder='Enter your name' ref={fullName} />
+              <input type="text" className={styles.nameInput} id='fullname' placeholder='Enter your name' ref={fullName} />
               </div>
               <div className={styles.headingInput}>
               <label htmlFor="">Username</label>
@@ -53,7 +53,7 @@ export default function RegisterPage() {
                placeholder='Enter your email' ref={email} />
               </div>
               <div className={styles.headingInput}>
-              <label htmlFor="">Phone Number</label>
+              <label htmlFor="">Phone No.</label>
               <input type="text" id="phonenumber"  placeholder='Enter your number' ref={phoneNumber} />
               
               </div>
