@@ -14,14 +14,14 @@
     background-color: #4071F4;
 }
 h1{
-    font-size: 2.5vw;
+    font-size: 2vw;
 }
 form{
     height: 100%;
     width: 100%;
 }
 .box{
-    height: 70vh;
+    height: 55vh;
     width: 50vw;    
     background-color: white;
     border-radius: 15px;
@@ -43,17 +43,18 @@ form{
     width: 45%;
     padding: 1rem 0rem;
 }
-input{
-    height: 3vw;
+input[type="text"],
+input[type="password"]{
+    height: 4.5vh;
     padding: 10px 1rem;
     border: 1px solid rgba(0, 0, 0, 0.254);
     border-radius: 5px;
-    outline: none;
-    
+    outline: none; 
 }
-input:focus{
+
+/* input:focus{
     border: 2px solid #4071F4;
-}
+} */
 .genderBox{
     width: 100%;
     display: flex;
@@ -91,12 +92,10 @@ p{
         width: 70%;
    }
    input{
-        height: 3.5vh;
+        height: 3.9vh;
         width:200%;
+
    }
-   /* .nameInput{
-    padding: 1rem;
-   } */
    .inputRows{
        height: 22%;
        width: 100%;
@@ -125,10 +124,13 @@ p{
 
    }
    input[type='radio']{
-        padding: 0.7rem 0;
+        /* padding: rem 0; */
         height: 1rem;
         width: 1rem;
    }
    
 
+}
+@media screen and (min-width: 768px) {
+    
 }

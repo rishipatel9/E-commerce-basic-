@@ -55,7 +55,6 @@ export default function RegisterPage() {
               <div className={styles.headingInput}>
               <label htmlFor="">Phone No.</label>
               <input type="text" id="phonenumber"  placeholder='Enter your number' ref={phoneNumber} />
-              
               </div>
             </div>
             <div className={styles.inputRows}>

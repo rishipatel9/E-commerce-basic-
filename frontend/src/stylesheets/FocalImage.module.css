@@ -1,0 +1,11 @@
+.focal{
+    width: 80vw;
+    height: 30vw;
+    position: absolute;
+    background-color: bisque;
+    top: 4rem;
+    left: 4rem;
+    z-index: 0;
+    display: flex;
+    justify-content: space-around;
+}
