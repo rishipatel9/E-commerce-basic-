@@ -7,7 +7,9 @@ export default {
   theme: {
     colors:{
       'mainTheme':'#95C54F',
-      'black' :'black'
+      'black' :'black',
+      'white' :'white',
+      'lightgrey':'rgba(222, 218, 218, 0.448)'
     }
   },
   plugins: [],

@@ -1,11 +1,38 @@
 .focal{
-    width: 80vw;
+    font-family:  Helvetica , sans-serif;
+    width: 90vw;
     height: 30vw;
-    position: absolute;
-    background-color: bisque;
-    top: 4rem;
-    left: 4rem;
-    z-index: 0;
+    background-color: #fff3d0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    box-shadow: 5px 5px 30px rgba(228, 224, 224, 0.404);
+    background-image: radial-gradient(white 2.5px,transparent 2.5px);
+    background-size: 50px 50px;
+    /* animation-name: animate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: all  0.7s ease-in-out; */
+}
+/* @keyframes animate {
+    from{
+        background-image: radial-gradient(rgb(176, 7, 7) 2.5px, transparent 2.5px);
+        background-size: 50px 50px;
+    }
+    to{
+        background-image: radial-gradient(white 2.5px,transparent 2.5px);
+        background-size: 50px 50px;
+    }
+} */
+.Facilities{
+    margin-top: 1rem;
+    height: 20vh;
+    width: 90vw;
+    border: 1px solid rgba(222, 218, 218, 0.448);
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
