@@ -1,9 +1,10 @@
 import React from 'react'
-import DealCard from './homeComponents/DealCard'
-import Division from './homeComponents/Division'
-import Facilities from './homeComponents/facilities'
-import FocalImage from './homeComponents/FocalImage'
-import Navbar from './homeComponents/Navbar'
+import DealCard from './home/DealCard'
+import Division from './home/Division'
+import Facilities from './home/facilities'
+import FocalImage from './home/FocalImage'
+import Navbar from './home/Navbar'
+import CardDist from './home/cardDist'
 
 export default function HomePage() {
   return (
@@ -12,7 +13,7 @@ export default function HomePage() {
       <div><FocalImage></FocalImage></div>
       <div><Facilities></Facilities></div>
       <div><Division children={"Deal of the Day"}></Division></div>
-      <div><DealCard></DealCard></div>
+      <div><CardDist></CardDist></div>
     </div>
 
   )
