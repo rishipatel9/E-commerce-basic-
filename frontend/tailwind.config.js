@@ -9,7 +9,8 @@ export default {
       'mainTheme':'#95C54F',
       'black' :'black',
       'white' :'white',
-      'lightgrey':'rgba(222, 218, 218, 0.448)'
+      'lightgrey':'rgba(222, 218, 218, 0.448)',
+      'lighttext':'#C5C5C5'
     }
   },
   plugins: [],
