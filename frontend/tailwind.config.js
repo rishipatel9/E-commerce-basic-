@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     colors:{
-      'mainTheme':'#95C54F',
+      'mainTheme':'rgb(120,196,48)',
       'black' :'black',
       'white' :'white',
       'lightgrey':'rgba(222, 218, 218, 0.448)',
@@ -15,4 +15,3 @@ export default {
   },
   plugins: [],
 }
-

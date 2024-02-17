@@ -9,7 +9,7 @@ export default function Facilities() {
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
-          stroke="#95C54F"
+          stroke="rgb(120,196,48)"
           className="w-6 h-6"
         >
           <path
@@ -31,7 +31,7 @@ export default function Facilities() {
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
-          stroke="#95C54F"
+          stroke="rgb(120,196,48)"
           className="w-6 h-6"
         >
           <path
@@ -53,7 +53,7 @@ export default function Facilities() {
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
-          stroke="#95C54F"
+          stroke="rgb(120,196,48)"
           className="w-6 h-6"
         >
           <path
@@ -75,7 +75,7 @@ export default function Facilities() {
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
-          stroke="#95C54F"
+          stroke="rgb(120,196,48)"
           className="w-6 h-6"
         >
           <path

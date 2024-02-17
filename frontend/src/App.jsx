@@ -1,8 +1,6 @@
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Navbar from './components/home/Navbar';
-import RegisterPage from '../../frontend/src/components/RegisterPage';
 import HomePage from './components/HomePage';
-import FocalImage from './components/home/FocalImage';
+import CartPage from './components/Cart/CartPage';
 
 function App() {
   return (
@@ -10,8 +8,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
-        {/* <Route path="/navbar" element={<Navbar/>}/> */}
-        <Route path="/image" element={<FocalImage/>}/>
+        <Route path="/cart" element={<CartPage/>}></Route>
       </Routes>
     </div>
   </Router>
