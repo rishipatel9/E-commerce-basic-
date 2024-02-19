@@ -1,4 +1,6 @@
 import React from "react";
+import { useDispatch } from 'react-redux';
+import { add } from "../../utility/cart";
 
 export default function DealCard({ title, imageUrl, price }) {
   const discount = Math.floor(Math.random() * 50);
@@ -9,6 +11,18 @@ export default function DealCard({ title, imageUrl, price }) {
     width:"90%",
     backgroundImage:`linear-gradient(to right , rgb(120,196,48) ${randomNum}%, rgba(222, 218, 218, 0.448) ${randomNum}%)`
   }
+  const dispatch=useDispatch();
+  const addtocartHandler =() =>{
+
+     dispatch(add(
+      {
+        title:title,
+        imageUrl:imageUrl,
+        disPrice:discountedPrice,
+      }
+     ))
+  } 
+
   return (
     <div className="mt-5 h-auto w-52 flex flex-col justify-center relative items-center border border-solid border-lightgrey transition-all hover:border-mainTheme hover:shadow-xl">
       <div className="absolute top-2 left-1 bg-mainTheme text-white px-1 shadow-sm rounded-sm font-light">
@@ -17,7 +31,7 @@ export default function DealCard({ title, imageUrl, price }) {
       <div>
         <img
           src={imageUrl}
-          className="h-28 w-28 mt-10 mb-10 my-10"
+          className="h-28 w-28 mt-10 mb-10 my-10 "
           alt={title}
         />
       </div>
@@ -50,8 +64,8 @@ export default function DealCard({ title, imageUrl, price }) {
             />
           </svg>
         </div>
-
-        <div className="h-10 w-10 bg-lightgrey rounded-3xl flex justify-center items-center ">
+      {/* Cart  */}
+        <div className="h-10 w-10 bg-lightgrey rounded-3xl flex justify-center items-center " onClick={() => addtocartHandler()}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -59,6 +73,7 @@ export default function DealCard({ title, imageUrl, price }) {
             strokeWidth={1.5}
             stroke="rgb(120,196,48)"
             className="w-6 h-6"
+            
           >
             <path
               strokeLinecap="round"

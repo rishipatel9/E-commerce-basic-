@@ -28,6 +28,12 @@
         title:"Strawberry",
         imageUrl:"../src/assets/images/strawberry.png",
         price:25.00
+    },
+    {
+        title:'Avocado',
+        imageUrl:"../src/assets/images/avocado.png",
+        price:55.00
     }
+
     ]
 export  default DEAL_DATA;

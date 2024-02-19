@@ -1,5 +1,4 @@
 import React from 'react'
-import DealCard from './home/DealCard'
 import Division from './home/Division'
 import Facilities from './home/facilities'
 import FocalImage from './home/FocalImage'
@@ -12,7 +11,7 @@ export default function HomePage() {
       <div><Navbar></Navbar></div>
       <div><FocalImage></FocalImage></div>
       <div><Facilities></Facilities></div>
-      <div><Division children={"Deal of the Day"}></Division></div>
+      <div><Division Text={"Deal of the Day"}></Division></div>
       <div><CardDist></CardDist></div>
     </div>
 
