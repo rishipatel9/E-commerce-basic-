@@ -9,7 +9,6 @@ export const cartSlice  = createSlice({
     initialState:initialState,
     reducers:{
         add:(state,action) =>{
-            // console.log(action.payload);
             const addtocart ={
                 id:nanoid(),
                 title:action.payload.title,

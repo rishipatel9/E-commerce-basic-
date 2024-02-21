@@ -17,7 +17,7 @@ export default function Cartitems() {
         </div>
         <div className='flex  mt-10 gap-5' style={{width:"90vw"}}>
             <div className='w-3/4 h-auto border border-solid border-lightgrey'>
-              <div className='flex border-b border-solid border-lightgrey justify-around px-10'>
+              <div className='flex border-b border-solid border-lightgrey justify-around p-5'>
                 <div className='font-semibold tracking-tighter '><p>IMAGE</p></div>
                 <div className='font-semibold tracking-tighter '><p>PRODUCT NAME</p></div>
                 <div className='font-semibold tracking-tighter '><p>PRICE</p></div>
@@ -30,6 +30,10 @@ export default function Cartitems() {
               </div>
             </div>
             <div className='w-1/4 border border-solid border-lightgrey'>
+                <div className='flex border-b border-solid border-lightgrey justify-around p-5 font-semibold tracking-tighter'>
+                  CART TOTAL
+                </div>
+                
             </div>
         </div>
         
