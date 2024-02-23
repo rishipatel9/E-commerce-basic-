@@ -1,4 +1,4 @@
-import { createSlice ,nanoid} from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState ={   
     cart :[]
@@ -10,7 +10,7 @@ export const cartSlice  = createSlice({
     reducers:{
         add:(state,action) =>{
             const addtocart ={
-                id:nanoid(),
+                id:action.payload.id,
                 title:action.payload.title,
                 imageUrl:action.payload.imageUrl,
                 disPrice:action.payload.disPrice

@@ -1,39 +1,47 @@
-
-    const DEAL_DATA = [{
+import { nanoid } from "@reduxjs/toolkit";
+const DEAL_DATA = 
+[
+    {
+        id:nanoid(),
         title:"Apple",
         imageUrl:"../src/assets/images/apple.png",
         price:35.00,
     },
     {
+        id:nanoid(),
         title:"Banana",
         imageUrl:"../src/assets/images/banana.png",
         price:40.00
     },
     {
+        id:nanoid(),
         title:"Kiwi",
         imageUrl:"../src/assets/images/kiwi.png",
         price:60.00
     },
     {
+        id:nanoid(),
         title:"Orange",
         imageUrl:"../src/assets/images/orange.png",
         price:40.00
     },
     {
+        id:nanoid(),
         title:"Brocoli",
         imageUrl:"../src/assets/images/brocoli.png",
         price:25.00
     },
     {
+        id:nanoid(),
         title:"Strawberry",
         imageUrl:"../src/assets/images/strawberry.png",
         price:25.00
     },
     {
+        id:nanoid(),
         title:'Avocado',
         imageUrl:"../src/assets/images/avocado.png",
         price:55.00
     }
-
-    ]
+]
 export  default DEAL_DATA;

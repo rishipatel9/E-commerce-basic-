@@ -1,10 +1,11 @@
 import React from "react";
 import { useDispatch } from 'react-redux';
 import { add } from "../../utility/cart";
+import { additem } from "../../utility/productQuantity";
 
-export default function DealCard({ title, imageUrl, price }) {
+export default function DealCard({ title, imageUrl, price ,id}) {
   const discount = Math.floor(Math.random() * 50);
-  const discountedPrice = price - (price * discount) / 100;
+  const discountedPrice = parseInt(price - (price * discount) / 100);
 
   const randomNum= Math.floor(Math.random() * 80);
   const style={
@@ -13,16 +14,22 @@ export default function DealCard({ title, imageUrl, price }) {
   }
   const dispatch=useDispatch();
   const addtocartHandler =() =>{
-
+    dispatch(additem(
+      {
+        id:id,
+        quantity:1,
+        price:discountedPrice
+      }
+    ))
      dispatch(add(
       {
+        id:id,
         title:title,
         imageUrl:imageUrl,
         disPrice:discountedPrice,
       }
      ))
   } 
-
   return (
     <div className="mt-5 h-auto w-52 flex flex-col justify-center relative items-center border border-solid border-lightgrey transition-all hover:border-mainTheme hover:shadow-xl">
       <div className="absolute top-2 left-1 bg-mainTheme text-white px-1 shadow-sm rounded-sm font-light">

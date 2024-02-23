@@ -1,27 +1,27 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const intitalState= {
-    total:0,
-    items:[]
+const initialState={
+    items:[],
+    total:0
 }
-const totalUpdate= (items) =>{
-    let ogTotal = 0;
-    items.map(item => {
-        
-    });
-    return ogTotal;
-}
-export const totalSlice = createSlice({
+export const quantitySlice = createSlice({
     name:"Total",
-    initialState:intitalState,
+    initialState,
     reducers:{
-        calculate:(state,action)=>{
-            console.log(action.payload);
-            state.total=totalUpdate(action.payload);
+        additem:(state,action)=>{
+            const { id, quantity, price } = action.payload;
+            const index = state.items.findIndex(item => item.id === id);
+            console.log({id, quantity, price });
+            if (index === -1) {
+                state.items.push({ id, quantity, price });
+            } else {
+                state.items[index].quantity = quantity;
+            }
+            state.total = parseInt(state.items.reduce((acc, item) => acc + item.quantity * item.price, 0));
         }
     }
 })
 
-export const {calculate} =totalSlice.actions;
-
-export default totalSlice.reducer;
+export const {additem} = quantitySlice.actions;
+ 
+export default quantitySlice.reducer;
